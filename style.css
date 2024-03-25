@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+main{
+    /* background-color: #eee; */
+    padding-top: 1%;
+}
+
+.table-container {
+   max-height: 400px; /* Set maximum height for the table container */
+   overflow-y: auto; /* Enable vertical scrolling */
+   max-width: 100%; /* Set maximum width */
+   overflow-x: auto; /* Enable horizontal scrolling if needed */
+ }
+
+.profile{
+   margin-top: 6% !important;
+}
+
+.change_pass{
+   width:50%;
+   
+   padding: 10px;
+   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+   .change_pass {
+       width: 100%;
+   }
+   .content-container{
+      margin-top: 20%;
+   }
+   .profile{
+      margin-top: 30% !important;
+   }
+}
+
+@media (min-width: 992px) {
+   /* Hide elements on screens larger than 992px (large screens) */
+   .hide {
+     display: none;
+   }
+ }
+
+
+
+
+input:focus {
+   border-color: crimson !important; /* Change border color */
+   background-color: #ffe6e6 !important; /* Change background color */
+   color: #8b0000 !important; /* Change text color */
+   box-shadow: 0 0 0 0.2rem rgba(220, 20, 60, 0.25) !important; /* Change box shadow */
+ }
+
+.text-color{
+   background-color: crimson;
+   color: white;
+   padding: 8px;
+   border-radius: 5px;
+}
+
+.qr_code{
+    padding-bottom: 50px;
+    width: 30vw;
+    margin: auto;
+}
+
+.qr_code img{
+    width: 30vw;
+}
+
+#unitResults{
+    margin-top: 30px;
+}
+
+.custom-button{
+    background-color: crimson; /* Set your desired custom color */
+    color: #fff ; /* Set text color */
+}
+
+.custom-table{
+    margin-top: 2% !important;
+}
+
+
+
+.custom-button:hover  {
+    background-color: #fbd0d9; /* Set your desired custom color */
+    color: #333; /* Set text color */
+}
+
+
+/* Container styles */
+.container {
+   display: flex;
+   height: 100vh;
+   background-color: #fff;
+   position: relative;
+ }
+ 
+ .content-container{
+    padding-top: 6%;
+ }
+ .container .content {
+   flex: 1;
+   padding: 0 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left: 200px;
+ }
+ 
+ .container .content h3 {
+   font-size: 30px;
+   color: #333;
+   margin-bottom: 20px;
+ }
+ 
+ .container .content h3 span {
+   background: crimson;
+   color: #fff;
+   border-radius: 5px;
+   padding: 0 15px;
+ }
+ 
+ .container .content h1 {
+   font-size: 50px;
+   color: #333;
+   margin-bottom: 20px;
+ }
+ 
+ .container .content h1 span {
+   color: crimson;
+ }
+ 
+ /* Navigation styles */
+ .container .nav {
+   width: 300px;
+   background-color: #fbd0d9;
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+ }
+ .nav a {
+   text-decoration: none; /* Remove underline */
+}
+ 
+ .container .nav ul {
+   list-style-type: none;
+   padding: 40px;
+ }
+ 
+ .container .nav ul li {
+   padding: 15px;
+   border-bottom: 1px solid #ddd;
+   text-decoration: none !important;
+ }
+ 
+ .container .nav ul li a {
+   display: block;
+   color: #333;
+   font-size: 20px;
+   padding: 5px 10px;
+   
+ }
+ 
+ .container .nav ul li a:hover {
+   background-color: #fff;
+ }
+ 
+ /* Profile icon styles */
+ .container .profile-icon {
+   width: 52px;
+   height: 55px;
+   background-color: #fff;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   position: absolute;
+   top: 10px;
+   left: 20px;
+   z-index: 1;
+ }
+ 
+ .container .profile-icon i {
+   font-size: 30px;
+   color: crimson;
+ }
+
+.container .content .btn{
+   display: inline-block;
+   padding:10px 30px;
+   font-size: 20px;
+   background: #333;
+   color:#fff;
+   margin:0 5px;
+   text-transform: capitalize;
+}
+
+.container .content .btn:hover{
+   background: crimson;
+}
+
+.form-container{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 60px;
+   background: #eee;
+}
+
+.form-container form{
+   padding:20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   background: #fff;
+   text-align: center;
+   width: 500px;
+}
+
+.form-container form h3{
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color:#333;
+}
+
+.form-container form input,
+.form-container form select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: #eee;
+   border-radius: 5px;
+}
+
+.form-container form select option{
+   background: #fff;
+}
+
+.form-container form .form-btn{
+   background: #fbd0d9;
+   color:crimson;
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+   background: crimson;
+   color:#fff;
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color:#333;
+}
+
+.form-container form p a{
+   color:crimson;
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: crimson;
+   color:#fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
+
+.form-container form .success-msg{
+   margin:10px 0;
+   display: block;
+   background: green;
+   color:#fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
+
+.forgot-password{
+   display: block;
+   margin-top: 10px;
+   font-size: 16px;
+   color: #333;
+   text-decoration: none;
+}
+
+
+.password-input {
+   position: relative;
+   margin-bottom: 16px;
+}
+
+.password-input input {
+   padding-right: 50px;
+}
+
+.show-hide-btn {
+   position: absolute;
+   top: 50%;
+   right: 10px;
+   transform: translateY(-50%);
+   background: none;
+   border: none;
+   cursor: pointer;
+   outline: none;
+}
+
+.show-hide-btn i {
+   font-size: 20px;
+   color: #ef7b7b;
+   transition: .3s;
+}
+
+
+/* Calendar styling */
+.calendar {
+   width: 60%;
+   margin: 0 auto;
+   text-align: center;
+ }
+ 
+ /* Heading styling */
+ .calendar h3 {
+   color: crimson;
+ }
+ 
+ /* Table styling */
+ .calendar table {
+   width: 100%;
+   border-collapse: collapse;
+ }
+ 
+ /* Table header styling */
+ .calendar th {
+   padding: 10px;
+ }
+ 
+ /* Table body styling */
+ .calendar td {
+   padding: 10px;
+ }
+ 
+ /* Highlight current date */
+ .calendar .current-date {
+   background-color: crimson;
+   color: white;
+   border-radius: 50%;
+ }
+
+ 
